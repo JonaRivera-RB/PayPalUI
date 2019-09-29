@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PayPalUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1050"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWu-5G-rFp">
-                                <rect key="frame" x="0.0" y="88" width="414" height="878"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="928"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTV-iz-e4e">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="878"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="928"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zU5-v4-S9l">
                                                 <rect key="frame" x="20" y="30" width="374" height="143"/>
@@ -246,6 +246,7 @@
                                             <constraint firstItem="zU5-v4-S9l" firstAttribute="leading" secondItem="pTV-iz-e4e" secondAttribute="leading" constant="20" id="8RE-0T-cME"/>
                                             <constraint firstItem="TvE-fI-e8Q" firstAttribute="top" secondItem="Iu8-ux-kSB" secondAttribute="bottom" constant="30" id="GvW-n7-ZHL"/>
                                             <constraint firstItem="DkJ-sv-fG5" firstAttribute="top" secondItem="TvE-fI-e8Q" secondAttribute="bottom" constant="30" id="HKi-cc-Vgg"/>
+                                            <constraint firstAttribute="bottom" secondItem="DkJ-sv-fG5" secondAttribute="bottom" constant="109" id="Iah-lg-s5I"/>
                                             <constraint firstItem="Iu8-ux-kSB" firstAttribute="leading" secondItem="QX8-p8-ZUh" secondAttribute="leading" id="PRJ-HC-zsi"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QX8-p8-ZUh" secondAttribute="trailing" constant="30" id="U4v-ba-ciQ"/>
                                             <constraint firstItem="QX8-p8-ZUh" firstAttribute="top" secondItem="zU5-v4-S9l" secondAttribute="bottom" constant="30" id="a3g-Xz-GSN"/>
@@ -263,13 +264,13 @@
                                     <constraint firstItem="pTV-iz-e4e" firstAttribute="leading" secondItem="AWu-5G-rFp" secondAttribute="leading" id="EvV-I5-ltI"/>
                                     <constraint firstAttribute="bottom" secondItem="pTV-iz-e4e" secondAttribute="bottom" id="IOd-Un-wBN"/>
                                     <constraint firstItem="pTV-iz-e4e" firstAttribute="top" secondItem="AWu-5G-rFp" secondAttribute="top" id="P3e-Nk-jDB"/>
-                                    <constraint firstItem="pTV-iz-e4e" firstAttribute="height" secondItem="AWu-5G-rFp" secondAttribute="height" id="aPb-hm-wDA"/>
+                                    <constraint firstItem="pTV-iz-e4e" firstAttribute="height" secondItem="AWu-5G-rFp" secondAttribute="height" priority="250" id="aPb-hm-wDA"/>
                                     <constraint firstAttribute="trailing" secondItem="pTV-iz-e4e" secondAttribute="trailing" id="cc2-Y5-s3r"/>
                                     <constraint firstItem="pTV-iz-e4e" firstAttribute="width" secondItem="AWu-5G-rFp" secondAttribute="width" id="k5c-OA-K7K"/>
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2P-Vp-W4L">
-                                <rect key="frame" x="0.0" y="880" width="414" height="120"/>
+                                <rect key="frame" x="0.0" y="930" width="414" height="120"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YG8-Od-QW3">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -354,7 +355,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="iqb-B0-yWK"/>
-                    <size key="freeformSize" width="414" height="1000"/>
+                    <size key="freeformSize" width="414" height="1050"/>
+                    <connections>
+                        <outlet property="balanceView" destination="zU5-v4-S9l" id="Qfl-ah-7hF"/>
+                        <outlet property="moreSecurityView" destination="DkJ-sv-fG5" id="BGS-cJ-QoQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
